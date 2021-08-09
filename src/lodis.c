@@ -73,6 +73,8 @@ int lodis_set(char *key , char *value , int length , int ttl)
                 /* update existing cargo */
                 if ( _lodis_update_cargo(curcargo , key , value , length , ttl) ) 
                     return LODIS_MALLOC_FAIL;
+                else
+                    return LODIS_SUCCESS;
             }
             if ( curcargo->next == NULL ){
                 /* insert new cargo to the end */

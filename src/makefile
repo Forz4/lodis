@@ -2,7 +2,7 @@ TARGET = liblodis.a console
 CC = @gcc
 AR = @ar -ruc
 RM = @rm -f
-CCFLAG = -g -Wall
+CCFLAG = -Wall
 
 all:	$(TARGET) 
 
